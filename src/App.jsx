@@ -1,18 +1,36 @@
-import { useState } from 'react'
-// import reactLogo from './assets/react.svg'
-// import viteLogo from './assets/vite.svg'
-// import heroImg from './assets/hero.png'
-import './App.css'
-// import { Provaider } from 'react-redux';
+import React from 'react';
+import ServiceAdd from './components/ServiceAdd';
+import ServiceList from './components/ServiceList';
 
-function App() {
-  const [count, setCount] = useState(0)
-
+export default function App() {
   return (
     <>
-      <h3>Задание</h3>
+      <ServiceAdd />
+      <ServiceList />
     </>
-  )
+  );
 }
 
-export default App
+
+
+
+// // import { useState } from 'react'
+// import './App.css'
+// // import React from 'react';
+// import { Provider } from 'react-redux';
+// import Task from './components/Task'
+
+
+// function App() {
+
+//   return (
+//     <>
+//       <h3>Задание</h3>
+//       <Provider>
+//         <Task />
+//       </Provider>
+//     </>
+//   )
+// }
+
+// export default App
