@@ -9,8 +9,10 @@ export function removeService(id) {
   return {type: REMOVE_SERVICE, payload: {id}};
 }
 
-export function changeServiceField(name, price) {
-  return {type: CHANGE_SERVICE_FIELD, payload: {name, price}};
+export function changeServiceField(name, value) {
+  // console.log(name);
+  // console.log(price);
+  return {type: CHANGE_SERVICE_FIELD, payload: {name, value}};
 }
 
 // и т.д. для других actionTypes
